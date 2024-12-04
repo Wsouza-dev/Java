@@ -1,0 +1,26 @@
+//herança pessoa -- extends
+public class Funcionario extends Pessoa {
+    double salario;
+
+    public Funcionario(String nome, int idade, double salario) {
+        super(nome, idade);
+        this.setSalario(salario);
+    }
+    
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    //metodo
+    public double calcularReajuste (double porcentagem){
+        return this.salario + (this.salario * porcentagem / 100);
+    }
+
+    String get() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+            
+            
